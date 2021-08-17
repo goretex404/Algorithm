@@ -1,4 +1,4 @@
-package basic;
+package goormedu;
 
 import java.util.Scanner;
 

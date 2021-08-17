@@ -1,4 +1,4 @@
-package lvUp_test.math;
+package practice.lvUp_test.math;
 
 import java.util.Scanner;
 //나머지

@@ -1,4 +1,4 @@
-package recursion;
+package practice;
 
 /*
  * 1,2,3 더하기 재귀함수 ver

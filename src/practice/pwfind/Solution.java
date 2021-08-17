@@ -1,4 +1,4 @@
-package sw_lvup_test.pwfind;
+package practice.pwfind;
 
 import java.util.Scanner;
 

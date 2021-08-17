@@ -1,4 +1,4 @@
-package sw_lvup_test.pwfind;
+package practice.pwfind;
 
 class UserSolution {
     public final static int N = 4;

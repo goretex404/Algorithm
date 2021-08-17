@@ -1,4 +1,4 @@
-package coteEx;
+package practice.coteEx;
 
 import java.util.Stack;
 
