@@ -1,4 +1,4 @@
-package 알고리즘스터디_문제List;
+package 알고리즘스터디_문제List.week1;
 
 import java.io.BufferedReader;
 import java.io.IOException;

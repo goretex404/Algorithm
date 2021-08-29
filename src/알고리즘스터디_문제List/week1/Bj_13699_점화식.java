@@ -1,4 +1,4 @@
-package 알고리즘스터디_문제List;
+package 알고리즘스터디_문제List.week1;
 
 import java.io.*;
 
@@ -10,12 +10,14 @@ public class Bj_13699_점화식 {
         StringBuilder sb = new StringBuilder();
 
         final int N = Integer.parseInt(br.readLine());
+        //0 <= n <= 35 int 자료형 넘어감
         long dp[] = new long[36];
         dp[0] = 1;
         dp[1] = 1;
+
+        //t(n)=t(0)*t(n-1)+t(1)*t(n-2)+...+t(n-1)*t(0)
         for (int i = 2; i < 36; i++) {
             for (int j = 0; j < i; j++) {
-                // i-1-j인  이유 ?
                 dp[i] += dp[j]*dp[i-1-j];
             }
         }

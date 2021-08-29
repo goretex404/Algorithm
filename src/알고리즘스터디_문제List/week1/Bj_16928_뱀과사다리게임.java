@@ -1,4 +1,4 @@
-package 알고리즘스터디_문제List;
+package 알고리즘스터디_문제List.week1;
 
 import java.util.PriorityQueue;
 import java.util.Queue;
@@ -26,18 +26,19 @@ public class Bj_16928_뱀과사다리게임 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        N = sc.nextInt();
-        M = sc.nextInt();
+        N = sc.nextInt(); //사다리의 수 (1 <= N <= 15)
+        M = sc.nextInt(); //뱀의 수 ( 1 <= M <= 15 )
 
-        //보드판
+        //보드
         for (int i = 1; i <= 100 ; i++) {
             map[i] = i;
         }
 
         for (int i = 0; i < N; i++) {
+            //사다리 map[x] = y
             map[sc.nextInt()] = sc.nextInt();
         }
-
+            //뱀 map[u] = v
         for (int i = 0; i < M; i++) {
             map[sc.nextInt()] = sc.nextInt();
         }
@@ -50,6 +51,7 @@ public class Bj_16928_뱀과사다리게임 {
     private static int bfs() {
         while(!pq.isEmpty()){
             Node n = pq.poll();
+
             if(n.pos == 100){
                 return n.answer;
             }
@@ -57,8 +59,10 @@ public class Bj_16928_뱀과사다리게임 {
             for (int i = 1; i <= 6; i++) {
                 int nowpos = n.pos + i;
                 if(nowpos <= 100){
+                    //방문하지 않았으면
                     if(!visit[nowpos]){
                         visit[nowpos] = true;
+                        //현재 위치 enqueue & 카운트
                         pq.add(new Node(map[nowpos], n.answer + 1));
                     }
                 }

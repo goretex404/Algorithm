@@ -1,4 +1,4 @@
-package 알고리즘스터디_문제List;
+package 알고리즘스터디_문제List.week1;
 
 public class prgms_2021kakao_합승택시요금 {
     static int[][] dist;

@@ -1,4 +1,4 @@
-package 알고리즘스터디_문제List;
+package 알고리즘스터디_문제List.week1;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -10,6 +10,7 @@ import java.util.StringTokenizer;
  *  첫째줄 N = TC
  *  두 번 째 줄 부터
  *  작업시간 , 선행 작업 갯수, 선행작업들 순서로 입력된다.
+ *  위상정렬
  */
 public class Bj_2056_작업 {
 
