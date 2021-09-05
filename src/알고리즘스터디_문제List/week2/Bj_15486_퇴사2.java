@@ -37,7 +37,7 @@ public class Bj_15486_퇴사2 {
             //현재 일 + 소요일
             int day = i + T[i];
             //회사에 있는 날 이내이면
-             if (day < N + 2) {
+            if (day < N + 2) {
                 DP[day] = Math.max(DP[day], max + P[i]);
             }
 
